@@ -113,15 +113,22 @@ a {
     z-index: -1;
 }
 
-#letter {
+#inside-paper {
     position: relative;
     width: 52%;
     height: 72%;
     overflow-y: auto;
     transform: translateY(2%);
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+#letter {
     font-family: sus;
-    color: #FF1AAC;
+    color: #ff1aac;
     font-size: 2.3rem;
+    margin-top: 0;
 }
 
 .spotify {
@@ -130,6 +137,11 @@ a {
     font-size: 2.75rem;
     text-align: center;
     text-wrap: balance;
+}
+
+#customer-image {
+    width: calc(100% - 10px);
+    object-fit: contain;
 }
 
 @keyframes fade-in {
@@ -176,27 +188,27 @@ a {
 
 *::-webkit-scrollbar-track {
     border-radius: 5px;
-    background-color: #DFE9EB;
+    background-color: #dfe9eb;
 }
 
 *::-webkit-scrollbar-track:hover {
-    background-color: #B8C0C2;
+    background-color: #b8c0c2;
 }
 
 *::-webkit-scrollbar-track:active {
-    background-color: #B8C0C2;
+    background-color: #b8c0c2;
 }
 
 *::-webkit-scrollbar-thumb {
     border-radius: 5px;
-    background-color: #DA82CD;
-    border: 1px solid #FFFFFF;
+    background-color: #da82cd;
+    border: 1px solid #ffffff;
 }
 
 *::-webkit-scrollbar-thumb:hover {
-    background-color: #D11BDA;
+    background-color: #d11bda;
 }
 
 *::-webkit-scrollbar-thumb:active {
-    background-color: #D849DA;
+    background-color: #d849da;
 }

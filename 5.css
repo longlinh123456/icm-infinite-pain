@@ -113,15 +113,22 @@ a {
   z-index: -1;
 }
 
-#letter {
+#inside-paper {
   position: relative;
   width: 52%;
   height: 72%;
   overflow-y: auto;
   transform: translateY(2%);
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+#letter {
   font-family: sus;
   color: #ff1aac;
   font-size: 2.3rem;
+  margin-top: 0;
 }
 
 .spotify {
@@ -132,6 +139,11 @@ a {
   text-wrap: balance;
 }
 
+#customer-image {
+  width: calc(100% - 10px);
+  object-fit: contain;
+}
+
 @keyframes fade-in {
   to {
     opacity: 1;
@@ -139,6 +151,7 @@ a {
 }
 
 @keyframes fade-in-and-out {
+
   0%,
   100% {
     opacity: 0;
